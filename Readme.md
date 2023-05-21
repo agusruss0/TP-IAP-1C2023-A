@@ -1,5 +1,5 @@
-#Contenido entregado por la cátedra para el TP
-*********************************************
+# Trabajo Practico de Introduccion a la Programación - 1C - 2023
+
 
 - enunciado.pdf: contiene el enunciado del tp, junto con las consignas, las aclaraciones y la especificación de los ejercicios a resolver.
 
