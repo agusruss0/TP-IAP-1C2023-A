@@ -47,6 +47,7 @@ likesDePublicacion (_, _, us) = us
 nombresDeUsuarios :: RedSocial -> [String]
 nombresDeUsuarios red = quitarRepetidos (proyectarNombres (usuarios red))
 
+
 {-
     La función "proyectarNombres" toma esta lista de usuarios
     y devuelve una lista de strings con los nombres de los usuarios.
@@ -223,6 +224,7 @@ aAlguienLeGustanTodas :: [Usuario] -> [Publicacion] -> Usuario -> Bool
 aAlguienLeGustanTodas _ [] u1 = False -- decidimos, que si no tiene publicaciones, no puede tener seguidor fiel.
 aAlguienLeGustanTodas [] ps u1 = False
 aAlguienLeGustanTodas (u:us) ps u1 = u1 /= u && leGustanTodasLasPublicaciones u ps || aAlguienLeGustanTodas us ps u1
+
 
 {-
     leGustanTodasLasPublicaciones recibe un Usuario y una lista de tipo Publicacion y nos devuelve un booleano.
